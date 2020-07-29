@@ -1,0 +1,86 @@
+header img{
+	display: none;
+	max-width: 100%;
+}
+.foot{
+	display: none;
+}
+.datos{
+	text-align: center;
+	border-top: 2px dashed black;
+	display: none;
+	width: max-content;
+	width: -moz-max-content;
+	margin: 10% auto 0;
+	padding: 0 1%;
+}
+.datos p{
+	margin-bottom: 0;
+}
+@media print{
+	html{
+		margin: 0;
+	}
+	body{
+		margin: 3cm 0 0.5cm;
+	}
+	header.main-header{
+		display: block!important;
+	}
+	header img{
+		display: block;
+	}
+	header a, header nav{
+		display: none!important;
+	}
+	footer{
+		position: fixed;
+		bottom: 0;
+	}	
+	.box{
+		border-top: none;
+	}
+	
+	.dl-horizontal dt{
+		float: left;
+		margin-right: 5%;
+	}
+	.foot{
+		display: block;
+	}
+	.foot img{
+		max-width: 100%;
+		width: 100%;
+	}
+	.foot p{
+		text-align: center;
+		margin: 0 0 0px;
+		font-size: 12px;
+		color: #005aff!important;
+	}
+	.main-footer{
+		border-top: none;
+	}
+	footer.main-footer{
+		width: 100%;
+	
+	}
+	footer, footer strong, footer b, footer .pull-right.hidden-xs{
+		color: transparent!important;
+	}
+	.datos{
+		display: block;
+	}
+	footer:before {
+		counter-increment: page;	
+	    /*content:"Pagína " counter(page);*/
+	    right: 20px;
+	    top: 22px;
+	    position: absolute;
+	    color: #005aff!important;
+	    white-space: nowrap; 
+	    z-index: 20px;
+	    font-size: 12px;
+	}
+}
+
